@@ -97,7 +97,7 @@ export default function StatsSection() {
           <h2 className="text-3xl md:text-4xl font-bold mb-4">
             Experiencia que respalda nuestro trabajo
           </h2>
-          <p className="text-gray-300 max-w-2xl mx-auto">
+          <p className="text-xl md:text-2xl font-semibold text-gray-300 max-w-2xl mx-auto">
             Números que reflejan nuestro compromiso con la calidad y la{' '}
             <span className="text-white font-semibold underline decoration-[var(--civym-yellow)] decoration-[3px] underline-offset-4">
               excelencia técnica
