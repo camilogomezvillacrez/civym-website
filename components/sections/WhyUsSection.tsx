@@ -1,11 +1,11 @@
 'use client'
 
-import { Map, Users, Leaf, Milestone } from 'lucide-react'
+import { Ruler, Footprints, Leaf, Milestone } from 'lucide-react'
 import { useGsapReveal } from '../../lib/gsap'
 
 const SPECIALTIES = [
-  { icon: Map, label: 'Diseño vial' },
-  { icon: Users, label: 'Estudios de movilidad' },
+  { icon: Ruler, label: 'Diseño vial' },
+  { icon: Footprints, label: 'Estudios de movilidad' },
   { icon: Leaf, label: 'Manejo ambiental' },
   { icon: Milestone, label: 'Señalización' }
 ]
@@ -42,7 +42,7 @@ export default function WhyUsSection() {
           {SPECIALTIES.map(({ icon: Icon, label }) => (
             <div
               key={label}
-              className="flex flex-col items-start gap-3 rounded-xl border border-white/10 bg-white/5 p-5"
+              className="flex flex-col items-center text-center gap-3 rounded-xl border border-white/20 bg-white/15 p-5 transition-colors hover:bg-white/20"
             >
               <div className="w-10 h-10 bg-[var(--civym-yellow)] rounded-lg flex items-center justify-center">
                 <Icon className="w-5 h-5 text-black" />
