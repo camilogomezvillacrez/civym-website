@@ -87,8 +87,12 @@ export default function StatsSection() {
   }, [prefersReducedMotion])
 
   return (
-    <section ref={sectionRef} className="py-24 bg-[var(--civym-gray-dark)] text-white">
-      <div className="container">
+    <section ref={sectionRef} className="relative overflow-hidden py-24 bg-[var(--civym-gray-dark)] text-white">
+      <div
+        aria-hidden="true"
+        className="pointer-events-none absolute inset-0 opacity-40 [background-image:radial-gradient(#FFCB42_2px,transparent_2px)] [background-size:26px_26px] [mask-image:radial-gradient(ellipse_at_top_right,black_35%,transparent_75%)]"
+      />
+      <div className="container relative">
         <div className="mb-16 text-center">
           <h2 className="text-3xl md:text-4xl font-bold mb-4">
             Experiencia que respalda nuestro trabajo

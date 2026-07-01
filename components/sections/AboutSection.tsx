@@ -45,9 +45,13 @@ export default function AboutSection() {
           </div>
         </div>
 
-        <div className="rounded-2xl bg-[var(--civym-gray-dark)] p-7 text-white shadow-xl">
-          <h3 className="text-xl font-semibold">¿Qué te ofrecemos?</h3>
-          <ul className="mt-6 space-y-4 text-sm text-gray-200">
+        <div className="relative overflow-hidden rounded-2xl bg-[var(--civym-gray-dark)] p-7 text-white shadow-xl">
+          <div
+            aria-hidden="true"
+            className="pointer-events-none absolute inset-0 opacity-40 [background-image:radial-gradient(#FFCB42_2px,transparent_2px)] [background-size:26px_26px] [mask-image:radial-gradient(ellipse_at_top_right,black_35%,transparent_75%)]"
+          />
+          <h3 className="relative text-xl font-semibold">¿Qué te ofrecemos?</h3>
+          <ul className="relative mt-6 space-y-4 text-sm text-gray-200">
             <li className="flex items-start gap-3">
               <CheckCircle className="mt-0.5 w-5 h-5 text-[var(--civym-yellow)]" />
               <span>Asesoría técnica especializada y acompañamiento en cada etapa.</span>
@@ -62,7 +66,7 @@ export default function AboutSection() {
             </li>
           </ul>
 
-          <div className="mt-8 flex items-center gap-3 rounded-xl border border-white/10 bg-white/10 p-4">
+          <div className="relative mt-8 flex items-center gap-3 rounded-xl border border-white/10 bg-white/10 p-4">
             <Mail className="w-5 h-5 text-[var(--civym-yellow)]" />
             <span className="text-sm">contacto@civym.com.co</span>
           </div>
