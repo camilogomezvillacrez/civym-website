@@ -15,6 +15,9 @@ type UseGsapRevealOptions = {
   once?: boolean
   start?: string
   blur?: number
+  /** Play on mount instead of waiting for a scroll trigger. Use for above-the-fold
+   * content (e.g. Hero) that may start below the trigger threshold on short viewports. */
+  immediate?: boolean
 }
 
 export function useReducedMotion() {
@@ -49,7 +52,8 @@ export function useGsapReveal<T extends HTMLElement>(options: UseGsapRevealOptio
     duration = 1.1,
     once = true,
     start = 'top 85%',
-    blur = 12
+    blur = 12,
+    immediate = false
   } = options
 
   useEffect(() => {
@@ -68,6 +72,12 @@ export function useGsapReveal<T extends HTMLElement>(options: UseGsapRevealOptio
       { opacity: 1, y: 0, scale: 1, filter: 'blur(0px)', duration, ease: 'power3.out', delay }
     )
 
+    if (immediate) {
+      return () => {
+        animation.kill()
+      }
+    }
+
     const trigger = ScrollTrigger.create({
       trigger: element,
       start,
@@ -81,7 +91,7 @@ export function useGsapReveal<T extends HTMLElement>(options: UseGsapRevealOptio
       animation.kill()
       trigger.kill()
     }
-  }, [blur, delay, duration, once, prefersReducedMotion, start, y])
+  }, [blur, delay, duration, once, prefersReducedMotion, start, y, immediate])
 
   return ref as RefObject<T>
 }

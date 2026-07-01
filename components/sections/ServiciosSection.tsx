@@ -80,7 +80,7 @@ export default function ServiciosSection() {
           aria-labelledby="service-modal-title"
         >
           <div
-            className="w-full max-w-lg rounded-2xl bg-white p-8 shadow-2xl"
+            className="w-full max-w-lg max-h-[90vh] overflow-y-auto rounded-2xl bg-white p-8 shadow-2xl"
             onClick={e => e.stopPropagation()}
           >
             <div className="flex items-start justify-between">

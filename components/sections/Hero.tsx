@@ -6,10 +6,10 @@ import { useGsapReveal } from '../../lib/gsap'
 import HeroCarousel from './HeroCarousel'
 
 export default function Hero() {
-  const heroRef = useGsapReveal<HTMLDivElement>({ y: 16, duration: 0.9, once: true, delay: 0.1 })
-  const titleRef = useGsapReveal<HTMLHeadingElement>({ y: 10, duration: 0.8, once: true, delay: 0.15 })
-  const textRef = useGsapReveal<HTMLParagraphElement>({ y: 10, duration: 0.8, once: true, delay: 0.3 })
-  const ctaRef = useGsapReveal<HTMLDivElement>({ y: 10, duration: 0.8, once: true, delay: 0.45 })
+  const heroRef = useGsapReveal<HTMLDivElement>({ y: 16, duration: 0.9, once: true, delay: 0.1, immediate: true })
+  const titleRef = useGsapReveal<HTMLHeadingElement>({ y: 10, duration: 0.8, once: true, delay: 0.15, immediate: true })
+  const textRef = useGsapReveal<HTMLParagraphElement>({ y: 10, duration: 0.8, once: true, delay: 0.3, immediate: true })
+  const ctaRef = useGsapReveal<HTMLDivElement>({ y: 10, duration: 0.8, once: true, delay: 0.45, immediate: true })
 
   return (
     <section id="inicio" className="bg-gradient-to-r from-[var(--civym-gray-light)] via-white to-[var(--civym-gray-light)] py-20">
