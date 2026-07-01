@@ -40,19 +40,19 @@ export default function Navbar() {
   const linkClass = (id: string) =>
     `px-3 py-1.5 rounded-lg transition-colors ${
       activeId === id
-        ? 'bg-white/10 text-[var(--civym-yellow)] font-semibold'
-        : 'text-gray-300 hover:bg-white/5 hover:text-white'
+        ? 'bg-[var(--civym-gray)] text-[var(--civym-yellow)] font-semibold'
+        : 'text-[var(--civym-gray)] hover:bg-[var(--civym-gray-light)] hover:text-[var(--civym-gray-dark)]'
     }`
 
   return (
-    <header className="relative overflow-hidden bg-[var(--civym-gray-dark)] border-b border-white/10 sticky top-0 z-50">
+    <header className="relative overflow-hidden bg-white border-b border-[var(--civym-gray-light)] sticky top-0 z-50">
       <div
         aria-hidden="true"
-        className="pointer-events-none absolute inset-0 opacity-30 [background-image:radial-gradient(#FFCB42_2px,transparent_2px)] [background-size:26px_26px] [mask-image:radial-gradient(ellipse_at_top_right,black_35%,transparent_75%)]"
+        className="pointer-events-none absolute inset-0 opacity-40 [background-image:radial-gradient(#FFCB42_2px,transparent_2px)] [background-size:26px_26px] [mask-image:radial-gradient(ellipse_at_top_right,black_35%,transparent_75%)]"
       />
-      <div className="container relative py-3 flex items-center justify-between">
+      <div className="container relative py-1 flex items-center justify-between">
         <Link href="/" className="flex items-center gap-2 hover:opacity-80 transition">
-          <img src="/images/logo-light.png" alt="CIVYM" className="h-16 w-auto" />
+          <img src="/images/logo.png" alt="CIVYM" className="h-36 w-auto" />
         </Link>
 
         <nav className="hidden md:flex items-center gap-2 text-sm font-medium">
@@ -65,7 +65,7 @@ export default function Navbar() {
             href="#contacto"
             className={`px-4 py-2 rounded-lg transition ${
               activeId === 'contacto'
-                ? 'bg-[var(--civym-yellow)] text-black shadow-md ring-2 ring-[var(--civym-yellow)] ring-offset-2 ring-offset-[var(--civym-gray-dark)]'
+                ? 'bg-[var(--civym-yellow)] text-black shadow-md ring-2 ring-[var(--civym-yellow)] ring-offset-2'
                 : 'bg-[var(--civym-yellow)] text-black hover:shadow-md'
             }`}
           >
@@ -75,7 +75,7 @@ export default function Navbar() {
 
         <button
           aria-label="menu"
-          className="md:hidden p-2 text-gray-300"
+          className="md:hidden p-2 text-[var(--civym-gray)]"
           onClick={() => setOpen(!open)}
         >
           {open ? <X className="w-6 h-6" /> : <Menu className="w-6 h-6" />}
@@ -83,7 +83,7 @@ export default function Navbar() {
       </div>
 
       {open && (
-        <div className="relative md:hidden border-t border-white/10">
+        <div className="relative md:hidden border-t border-[var(--civym-gray-light)]">
           <div className="container py-4 flex flex-col gap-4 text-sm font-medium">
             {NAV_LINKS.map(link => (
               <Link key={link.id} href={`#${link.id}`} onClick={() => setOpen(false)} className={linkClass(link.id)}>
@@ -94,7 +94,7 @@ export default function Navbar() {
               href="#contacto"
               onClick={() => setOpen(false)}
               className={`px-4 py-2 rounded-lg ${
-                activeId === 'contacto' ? 'bg-[var(--civym-yellow)] text-black ring-2 ring-[var(--civym-yellow)] ring-offset-2 ring-offset-[var(--civym-gray-dark)]' : 'bg-[var(--civym-yellow)] text-black'
+                activeId === 'contacto' ? 'bg-[var(--civym-yellow)] text-black ring-2 ring-[var(--civym-yellow)] ring-offset-2' : 'bg-[var(--civym-yellow)] text-black'
               }`}
             >
               Contacto
