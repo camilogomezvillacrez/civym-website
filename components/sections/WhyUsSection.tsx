@@ -42,7 +42,7 @@ export default function WhyUsSection() {
           {SPECIALTIES.map(({ icon: Icon, label }) => (
             <div
               key={label}
-              className="flex flex-col items-center text-center gap-3 rounded-xl border border-white/20 bg-white/15 p-5 transition-colors hover:bg-white/20"
+              className="flex flex-col items-center text-center gap-3 rounded-xl bg-white/5 backdrop-blur-sm border border-white/10 hover:border-[var(--civym-yellow)]/30 transition-colors duration-300 p-8"
             >
               <div className="w-10 h-10 bg-[var(--civym-yellow)] rounded-lg flex items-center justify-center">
                 <Icon className="w-5 h-5 text-black" />
