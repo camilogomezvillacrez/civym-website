@@ -2,6 +2,7 @@ import '../styles/globals.css'
 import type { ReactNode } from 'react'
 import Navbar from '../components/layout/Navbar'
 import Footer from '../components/layout/Footer'
+import WhatsAppButton from '../components/layout/WhatsAppButton'
 
 export const metadata = {
   title: 'CIVYM S.A.S. - Consultoría en Ingeniería de Vías y Movilidad',
@@ -15,6 +16,7 @@ export default function RootLayout({ children }: { children: ReactNode }) {
         <Navbar />
         <main>{children}</main>
         <Footer />
+        <WhatsAppButton />
       </body>
     </html>
   )
