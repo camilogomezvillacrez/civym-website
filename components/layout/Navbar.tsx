@@ -48,7 +48,7 @@ export default function Navbar() {
     <header className="relative overflow-hidden bg-white border-b border-[var(--civym-gray-light)] sticky top-0 z-50">
       <div
         aria-hidden="true"
-        className="pointer-events-none absolute inset-0 opacity-40 [background-image:radial-gradient(#FFCB42_2px,transparent_2px)] [background-size:26px_26px] [mask-image:radial-gradient(ellipse_at_top_right,black_35%,transparent_75%)]"
+        className="pointer-events-none absolute inset-0 opacity-[0.65] [background-image:radial-gradient(#FFCB42_2.4px,transparent_2.4px)] [background-size:26px_26px] [mask-image:radial-gradient(ellipse_at_top_right,black_55%,transparent_90%)]"
       />
       <div className="container relative py-1 flex items-center justify-between">
         <Link href="/" className="flex items-center gap-2 hover:opacity-80 transition">
