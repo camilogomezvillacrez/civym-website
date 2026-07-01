@@ -1,0 +1,75 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 280">
+  <defs>
+    <style>
+      .civym-text { font-family: 'Segoe UI', Arial, sans-serif; font-weight: 900; }
+      .civym-sub { font-family: 'Segoe UI', Arial, sans-serif; font-weight: 600; }
+    </style>
+  </defs>
+
+  <!-- Dot pattern: road in true perspective, trapezoid converging to a vanishing
+       point, S-curve spine, dot size/spacing/column-count all taper with distance.
+       Gold dots are the centerline of the road and taper in size like the gray ones. -->
+  <g>
+    <!-- row 0 (base) y=105, 8 cols, center 200 -->
+    <ellipse cx="92.00" cy="105" rx="12" ry="7.2" fill="#5E5E5E" />
+    <ellipse cx="128.00" cy="105" rx="12" ry="7.2" fill="#5E5E5E" />
+    <ellipse cx="164.00" cy="105" rx="12" ry="7.2" fill="#5E5E5E" />
+    <ellipse cx="200.00" cy="105" rx="12" ry="7.2" fill="#FFCB42" />
+    <ellipse cx="236.00" cy="105" rx="12" ry="7.2" fill="#5E5E5E" />
+    <ellipse cx="272.00" cy="105" rx="12" ry="7.2" fill="#5E5E5E" />
+    <ellipse cx="308.00" cy="105" rx="12" ry="7.2" fill="#5E5E5E" />
+    <ellipse cx="344.00" cy="105" rx="12" ry="7.2" fill="#5E5E5E" />
+
+    <!-- row 1 y=83, 7 cols, center 202.87 (S-curve: slight bulge right first) -->
+    <ellipse cx="108.37" cy="83" rx="10.5" ry="6.3" fill="#5E5E5E" />
+    <ellipse cx="139.87" cy="83" rx="10.5" ry="6.3" fill="#5E5E5E" />
+    <ellipse cx="171.37" cy="83" rx="10.5" ry="6.3" fill="#5E5E5E" />
+    <ellipse cx="202.87" cy="83" rx="10.5" ry="6.3" fill="#FFCB42" />
+    <ellipse cx="234.37" cy="83" rx="10.5" ry="6.3" fill="#5E5E5E" />
+    <ellipse cx="265.87" cy="83" rx="10.5" ry="6.3" fill="#5E5E5E" />
+    <ellipse cx="297.37" cy="83" rx="10.5" ry="6.3" fill="#5E5E5E" />
+
+    <!-- row 2 y=64, 6 cols, center 195.82 (curve starts sweeping left) -->
+    <ellipse cx="141.82" cy="64" rx="9" ry="5.4" fill="#5E5E5E" />
+    <ellipse cx="168.82" cy="64" rx="9" ry="5.4" fill="#5E5E5E" />
+    <ellipse cx="195.82" cy="64" rx="9" ry="5.4" fill="#FFCB42" />
+    <ellipse cx="222.82" cy="64" rx="9" ry="5.4" fill="#5E5E5E" />
+    <ellipse cx="249.82" cy="64" rx="9" ry="5.4" fill="#5E5E5E" />
+    <ellipse cx="276.82" cy="64" rx="9" ry="5.4" fill="#5E5E5E" />
+
+    <!-- row 3 y=48, 5 cols, center 181.22 -->
+    <ellipse cx="136.22" cy="48" rx="7.5" ry="4.5" fill="#5E5E5E" />
+    <ellipse cx="158.72" cy="48" rx="7.5" ry="4.5" fill="#5E5E5E" />
+    <ellipse cx="181.22" cy="48" rx="7.5" ry="4.5" fill="#FFCB42" />
+    <ellipse cx="203.72" cy="48" rx="7.5" ry="4.5" fill="#5E5E5E" />
+    <ellipse cx="226.22" cy="48" rx="7.5" ry="4.5" fill="#5E5E5E" />
+
+    <!-- row 4 y=34, 4 cols, center 161.51 -->
+    <ellipse cx="142.01" cy="34" rx="6.5" ry="3.9" fill="#5E5E5E" />
+    <ellipse cx="161.51" cy="34" rx="6.5" ry="3.9" fill="#FFCB42" />
+    <ellipse cx="181.01" cy="34" rx="6.5" ry="3.9" fill="#5E5E5E" />
+    <ellipse cx="200.51" cy="34" rx="6.5" ry="3.9" fill="#5E5E5E" />
+
+    <!-- row 5 y=22, 3 cols, center 139.02 -->
+    <ellipse cx="122.52" cy="22" rx="5.5" ry="3.3" fill="#5E5E5E" />
+    <ellipse cx="139.02" cy="22" rx="5.5" ry="3.3" fill="#FFCB42" />
+    <ellipse cx="155.52" cy="22" rx="5.5" ry="3.3" fill="#5E5E5E" />
+
+    <!-- row 6 y=12, 2 cols, center 116.05 -->
+    <ellipse cx="109.30" cy="12" rx="4.5" ry="2.7" fill="#FFCB42" />
+    <ellipse cx="122.80" cy="12" rx="4.5" ry="2.7" fill="#5E5E5E" />
+
+    <!-- row 7 (vanishing point) y=3, 1 col, center 95 -->
+    <ellipse cx="95.00" cy="3" rx="3" ry="1.8" fill="#FFCB42" />
+  </g>
+
+  <!-- Corner bracket frame -->
+  <polyline points="70,115 30,115 30,260 70,260" fill="none" stroke="#5E5E5E" stroke-width="6" stroke-linecap="square" />
+  <polyline points="330,115 370,115 370,260 330,260" fill="none" stroke="#5E5E5E" stroke-width="6" stroke-linecap="square" />
+
+  <!-- CIVYM text -->
+  <text x="200" y="205" class="civym-text" font-size="58" letter-spacing="3" fill="#5E5E5E" text-anchor="middle">CIVYM</text>
+
+  <!-- Subtitle -->
+  <text x="200" y="240" class="civym-sub" font-size="13" letter-spacing="0.3" fill="#6A6478" text-anchor="middle">CONSULTORÍA EN INGENIERÍA DE VÍAS Y MOVILIDAD</text>
+</svg>

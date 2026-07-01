@@ -3,9 +3,11 @@
 import Link from 'next/link'
 import { useState } from 'react'
 import { Mail, MessageSquare, User } from 'lucide-react'
+import { useGsapReveal } from '../../lib/gsap'
 
 export default function ContactoSection() {
   const [loading, setLoading] = useState(false)
+  const sectionRef = useGsapReveal<HTMLElement>({ y: 16, duration: 0.9, once: true, start: 'top 85%' })
   const [success, setSuccess] = useState(false)
   const [error, setError] = useState('')
   const [formData, setFormData] = useState({ name: '', email: '', message: '' })
@@ -43,7 +45,7 @@ export default function ContactoSection() {
   }
 
   return (
-    <section className="py-20 bg-white" id="contacto">
+    <section ref={sectionRef} className="py-20 bg-white" id="contacto">
       <div className="container">
         <div className="max-w-2xl">
           <h2 className="text-4xl font-bold text-[var(--civym-gray-dark)]">Solicita una cotización</h2>
@@ -122,7 +124,7 @@ export default function ContactoSection() {
 
           <div className="mt-8 pt-8 border-t border-[var(--civym-gray-light)]">
             <p className="text-sm text-[var(--civym-gray)]">
-              O escribe directamente a <Link href="mailto:contacto@civym.com.co" className="font-semibold text-[var(--civym-yellow)]">contacto@civym.com.co</Link>
+              O escribe directamente a <Link href="mailto:contacto@civym.com.co" className="font-semibold text-[var(--civym-gray-dark)] underline decoration-[var(--civym-yellow)] decoration-2 underline-offset-4 hover:decoration-[3px]">contacto@civym.com.co</Link>
             </p>
           </div>
         </div>

@@ -1,9 +1,14 @@
+'use client'
+
 import { PROYECTOS } from '../../constants/proyectos'
 import { MapPin, ArrowRight } from 'lucide-react'
+import { useGsapReveal } from '../../lib/gsap'
 
 export default function ProyectosSection() {
+  const sectionRef = useGsapReveal<HTMLElement>({ y: 16, duration: 0.9, once: true, start: 'top 85%' })
+
   return (
-    <section className="py-20 bg-[var(--civym-gray-light)]" id="proyectos">
+    <section ref={sectionRef} className="py-20 bg-[var(--civym-gray-light)]" id="proyectos">
       <div className="container">
         <div className="mb-16">
           <h2 className="text-4xl font-bold text-[var(--civym-gray-dark)]">Proyectos realizados</h2>
@@ -25,8 +30,8 @@ export default function ProyectosSection() {
                   <span>{p.location}</span>
                 </div>
                 <p className="text-[var(--civym-gray)] mt-4 text-sm leading-relaxed">{p.summary}</p>
-                <button className="mt-4 flex items-center gap-2 text-[var(--civym-yellow)] font-semibold text-sm hover:gap-3 transition">
-                  Ver más <ArrowRight className="w-4 h-4" />
+                <button className="mt-4 flex items-center gap-2 text-[var(--civym-gray-dark)] font-semibold text-sm hover:gap-3 transition">
+                  Ver más <ArrowRight className="w-4 h-4 text-[var(--civym-yellow)]" />
                 </button>
               </div>
             </article>

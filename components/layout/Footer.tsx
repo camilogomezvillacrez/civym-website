@@ -6,18 +6,23 @@ export default function Footer() {
     <footer className="bg-[var(--civym-gray-dark)] text-white">
       <div className="container py-12">
         <div className="grid grid-cols-1 md:grid-cols-4 gap-8 mb-8">
-          <div>
-            <h4 className="font-bold text-lg mb-3">CIVYM S.A.S.</h4>
-            <p className="text-sm text-gray-300">Consultoría en Ingeniería de Vías y Movilidad</p>
-            <p className="text-xs text-gray-400 mt-2">Operando en Antioquia · 3 años de experiencia</p>
+          <div className="flex items-center gap-4">
+            <div className="flex-shrink-0 rounded-xl bg-white p-2.5">
+              <img src="/images/logo.png" alt="CIVYM" className="h-12 w-auto" />
+            </div>
+            <div>
+              <h4 className="font-bold text-lg mb-1">CIVYM S.A.S.</h4>
+              <p className="text-sm text-gray-300">Consultoría en Ingeniería de Vías y Movilidad</p>
+              <p className="text-xs text-gray-400 mt-2">Operando en Antioquia · 3 años de experiencia</p>
+            </div>
           </div>
           
           <div>
             <h5 className="font-semibold mb-4">Servicios</h5>
             <ul className="text-sm text-gray-300 space-y-2">
               <li><Link href="#servicios" className="hover:text-[var(--civym-yellow)] transition">Diseño vial</Link></li>
-              <li><Link href="#servicios" className="hover:text-[var(--civym-yellow)] transition">Manejo de tránsito</Link></li>
-              <li><Link href="#servicios" className="hover:text-[var(--civym-yellow)] transition">Señalización</Link></li>
+              <li><Link href="#servicios" className="hover:text-[var(--civym-yellow)] transition">Movilidad</Link></li>
+              <li><Link href="#servicios" className="hover:text-[var(--civym-yellow)] transition">Manejo ambiental</Link></li>
             </ul>
           </div>
 
@@ -25,7 +30,7 @@ export default function Footer() {
             <h5 className="font-semibold mb-4">Enlaces</h5>
             <ul className="text-sm text-gray-300 space-y-2">
               <li><Link href="#proyectos" className="hover:text-[var(--civym-yellow)] transition">Proyectos</Link></li>
-              <li><Link href="/" className="hover:text-[var(--civym-yellow)] transition">Nosotros</Link></li>
+              <li><Link href="#nosotros" className="hover:text-[var(--civym-yellow)] transition">Nosotros</Link></li>
               <li><Link href="#contacto" className="hover:text-[var(--civym-yellow)] transition">Contacto</Link></li>
             </ul>
           </div>

@@ -11,13 +11,13 @@
 @tailwind components;
 @tailwind utilities;
 
-html, body, #__next {
-  height: 100%;
+html, body {
+  min-height: 100%;
 }
 
 body {
   font-family: var(--font-sans);
-  background-color: var(--civym-white);
+  background-color: var(--civym-gray);
   color: var(--civym-gray-dark);
   line-height: 1.6;
 }
