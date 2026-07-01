@@ -98,7 +98,11 @@ export default function StatsSection() {
             Experiencia que respalda nuestro trabajo
           </h2>
           <p className="text-gray-300 max-w-2xl mx-auto">
-            Números que reflejan nuestro compromiso con la calidad y la excelencia técnica en cada proyecto.
+            Números que reflejan nuestro compromiso con la calidad y la{' '}
+            <span className="text-white font-semibold underline decoration-[var(--civym-yellow)] decoration-[3px] underline-offset-4">
+              excelencia técnica
+            </span>{' '}
+            en cada proyecto.
           </p>
         </div>
 
