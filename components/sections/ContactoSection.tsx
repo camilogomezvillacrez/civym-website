@@ -47,9 +47,9 @@ export default function ContactoSection() {
   return (
     <section ref={sectionRef} className="py-20 bg-white" id="contacto">
       <div className="container">
-        <div className="max-w-2xl">
-          <h2 className="text-4xl font-bold text-[var(--civym-gray-dark)]">Solicita una cotización</h2>
-          <p className="mt-4 text-lg text-[var(--civym-gray)]">
+        <div className="max-w-2xl mx-auto">
+          <h2 className="text-4xl font-bold text-[var(--civym-gray-dark)] text-center">Solicita una cotización</h2>
+          <p className="mt-4 text-lg text-[var(--civym-gray)] text-center">
             Cuéntanos sobre tu proyecto y te contactaremos en las próximas 24 horas.
           </p>
 
@@ -122,7 +122,7 @@ export default function ContactoSection() {
             </button>
           </form>
 
-          <div className="mt-8 pt-8 border-t border-[var(--civym-gray-light)]">
+          <div className="mt-8 pt-8 border-t border-[var(--civym-gray-light)] text-center">
             <p className="text-sm text-[var(--civym-gray)]">
               O escribe directamente a <Link href="mailto:contacto@civym.com.co" className="font-semibold text-[var(--civym-gray-dark)] underline decoration-[var(--civym-yellow)] decoration-2 underline-offset-4 hover:decoration-[3px]">contacto@civym.com.co</Link>
             </p>
