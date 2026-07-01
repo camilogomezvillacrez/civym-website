@@ -1,4 +1,5 @@
 import Hero from '../components/sections/Hero'
+import WhyUsSection from '../components/sections/WhyUsSection'
 import AboutSection from '../components/sections/AboutSection'
 import ServiciosSection from '../components/sections/ServiciosSection'
 import StatsSection from '../components/sections/StatsSection'
@@ -14,6 +15,7 @@ export default function Home() {
   return (
     <div>
       <Hero />
+      <WhyUsSection />
       <AboutSection />
       <ServiciosSection />
       <StatsSection />

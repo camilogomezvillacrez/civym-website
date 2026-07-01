@@ -69,21 +69,6 @@ export default function ServiciosSection() {
             )
           })}
         </div>
-
-        <div className="relative overflow-hidden rounded-xl bg-[var(--civym-gray-dark)] p-8">
-          <div
-            aria-hidden="true"
-            className="pointer-events-none absolute inset-0 opacity-40 [background-image:radial-gradient(#FFCB42_2px,transparent_2px)] [background-size:26px_26px] [mask-image:radial-gradient(ellipse_at_top_right,black_35%,transparent_75%)]"
-          />
-          <div className="relative flex items-center gap-3">
-            <CheckCircle className="w-6 h-6 flex-shrink-0 text-[var(--civym-yellow)]" />
-            <h3 className="font-bold text-xl text-white">Por qué elegirnos</h3>
-          </div>
-          <p className="relative text-gray-300 mt-4 leading-relaxed max-w-3xl">
-            A diferencia de otras firmas que ofrecen vías <em>o</em> tránsito por separado, CIVYM integra <strong className="text-white">todas las especialidades</strong> en cada proyecto: diseño vial + estudios de movilidad + manejo ambiental + señalización.
-            Resulta en <strong className="text-white">menos coordinación, mayor coherencia y soluciones más eficientes</strong>.
-          </p>
-        </div>
       </div>
 
       {selected && (
