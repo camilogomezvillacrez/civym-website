@@ -50,11 +50,9 @@ export default function Navbar() {
         aria-hidden="true"
         className="pointer-events-none absolute inset-0 opacity-30 [background-image:radial-gradient(#FFCB42_2px,transparent_2px)] [background-size:26px_26px] [mask-image:radial-gradient(ellipse_at_top_right,black_35%,transparent_75%)]"
       />
-      <div className="container relative py-1 flex items-center justify-between">
+      <div className="container relative py-3 flex items-center justify-between">
         <Link href="/" className="flex items-center gap-2 hover:opacity-80 transition">
-          <div className="rounded-2xl bg-white p-2">
-            <img src="/images/logo.png" alt="CIVYM" className="h-24 w-auto" />
-          </div>
+          <img src="/images/logo-light.png" alt="CIVYM" className="h-16 w-auto" />
         </Link>
 
         <nav className="hidden md:flex items-center gap-2 text-sm font-medium">
