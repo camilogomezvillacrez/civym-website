@@ -1,0 +1,60 @@
+:root {
+  --civym-yellow: #FFCB42;
+  --civym-gray: #5E5E5E;
+  --civym-white: #FFFFFF;
+  --font-sans: 'Segoe UI', Roboto, system-ui, -apple-system, sans-serif;
+  --civym-gray-light: #F5F5F5;
+  --civym-gray-dark: #1F1F1F;
+}
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html, body, #__next {
+  height: 100%;
+}
+
+body {
+  font-family: var(--font-sans);
+  background-color: var(--civym-white);
+  color: var(--civym-gray-dark);
+  line-height: 1.6;
+}
+
+.container {
+  max-width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-weight: 700;
+  color: var(--civym-gray-dark);
+}
+
+h1 {
+  font-size: 2.5rem;
+  line-height: 1.2;
+}
+
+h2 {
+  font-size: 1.875rem;
+  margin-bottom: 1.5rem;
+}
+
+h3 {
+  font-size: 1.25rem;
+}
+
+a {
+  color: var(--civym-yellow);
+  text-decoration: none;
+  transition: opacity 0.2s;
+}
+
+a:hover {
+  opacity: 0.8;
+}
