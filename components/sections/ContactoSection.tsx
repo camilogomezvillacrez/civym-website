@@ -124,7 +124,7 @@ export default function ContactoSection() {
 
           <div className="mt-8 pt-8 border-t border-[var(--civym-gray-light)] text-center">
             <p className="text-sm text-[var(--civym-gray)]">
-              O escribe directamente a <Link href="mailto:contacto@civym.com.co" className="font-semibold text-[var(--civym-gray-dark)] underline decoration-[var(--civym-yellow)] decoration-2 underline-offset-4 hover:decoration-[3px]">contacto@civym.com.co</Link>
+              O escribe directamente a <Link href="mailto:civymingenieria@outlook.com" className="font-semibold text-[var(--civym-gray-dark)] underline decoration-[var(--civym-yellow)] decoration-2 underline-offset-4 hover:decoration-[3px]">civymingenieria@outlook.com</Link>
             </p>
           </div>
         </div>

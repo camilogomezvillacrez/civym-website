@@ -68,7 +68,7 @@ export default function AboutSection() {
 
           <div className="relative mt-8 flex items-center gap-3 rounded-xl border border-white/10 bg-white/10 p-4">
             <Mail className="w-5 h-5 text-[var(--civym-yellow)]" />
-            <span className="text-sm">contacto@civym.com.co</span>
+            <span className="text-sm">civymingenieria@outlook.com</span>
           </div>
         </div>
       </div>

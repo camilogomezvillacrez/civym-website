@@ -39,7 +39,7 @@ export default function Footer() {
             <h5 className="font-semibold mb-4">Contacto</h5>
             <div className="flex items-center gap-2 text-sm text-gray-300 mb-3 hover:text-[var(--civym-yellow)] transition">
               <Mail className="w-4 h-4" />
-              <Link href="mailto:contacto@civym.com.co">contacto@civym.com.co</Link>
+              <Link href="mailto:civymingenieria@outlook.com">civymingenieria@outlook.com</Link>
             </div>
             <div className="flex items-center gap-2 text-sm text-gray-300">
               <Phone className="w-4 h-4" />
